@@ -69,13 +69,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 nn.Dropout(0.3)
             )
 
-            # print number of parameters of self.model
-            num_params = sum(p.numel() for p in self.model.parameters())
-            print(f'Number of parameters in TS model: {num_params}')
-            # print number of parameters of self.mlp
-            num_params_mlp = sum(p.numel() for p in self.mlp.parameters())
-            print(f'Number of parameters in MLP: {num_params_mlp}')
-            print(f'Total number of parameters: {num_params + num_params_mlp}')
         else:
             self.mlp = None
         mlp_sizes2=[self.text_embedding_dim+self.args.pred_len,self.args.pred_len]
