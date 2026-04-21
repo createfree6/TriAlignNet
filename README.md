@@ -8,7 +8,8 @@ Table 1: Multimodal series forecasting results on eleven datasets from different
 
 Table 2: All models were evaluated in a uniform setting, where the input sequence length was fixed to 24, and the results were averaged over the predicted lengths 6, 12, 18, and 24. The optimal and suboptimal results are highlighted in bold and underlined, respectively. "Boost (%)" represents the relative boost of TriAlignNet over the optimal baseline model.  
 
-<img width="2481" height="2955" alt="多模态基线详细实验结果" src="https://github.com/user-attachments/assets/c82cea65-1a52-42f3-a4c8-7602e4dc93a3" />
+<img width="2481" height="2931" alt="多模态基线详细实验结果" src="https://github.com/user-attachments/assets/d04bca29-1b97-483a-8a1e-72f8300073ac" />
+
 
 
 
