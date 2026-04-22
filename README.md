@@ -37,5 +37,8 @@ The model is optimized using the Adam optimizer, with a learning rate scheduler 
 We appreciate the following github repo very much for the valuable code base and datasets:  
 TimeCMA: https://github.com/ChenxiLiu-HNU/TimeCMA  
 DMMV: https://github.com/D2I-Group/dmmv  
+FreqLLM: https://github.com/biya0105/FreqLLM  
 
+## Contact  
+If you have any questions or concerns, please contact us: yejunjie@stu.yun.edu.cn or zhaochunna@ynu.edu.cn or submit an issue.
 
