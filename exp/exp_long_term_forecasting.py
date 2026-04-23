@@ -749,7 +749,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                 outputs = outputs[:, -self.args.pred_len:, f_dim:]
                 # TODO: this only works for single variate time series
                 outputs = outputs[:, :, 0].unsqueeze(-1)
-                # outputs = (1-self.prompt_weight)*outputs+self.prompt_weight*prior_y
             
 
                 batch_y = batch_y[:, -self.args.pred_len:, f_dim:].to(self.device)
@@ -775,7 +774,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
                     model_optim_proj.step()
 
             print("Epoch: {} cost time: {}".format(epoch + 1, time.time() - epoch_time))
-            print(loss_mmd)
             train_loss = np.average(train_loss)
             vali_loss = self.vali(vali_data, vali_loader, criterion)
             test_loss, test_mae, _, _, _, _ = self.vali(test_data, test_loader, criterion, all_metric=True)
