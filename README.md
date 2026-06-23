@@ -17,7 +17,8 @@ The core idea is to progressively align heterogeneous modalities at three comple
 
 The overall architecture of TriAlignNet is shown below. The model employs a three-level alignment strategy to integrate information from numerical and textual modalities. Specifically, numerical features are encoded by an MLP-based numerical encoder, textual features are encoded by a pretrained language model, distribution-level alignment is achieved through MMD loss, a shared learnable anchor matrix is introduced to align multimodal features at the semantic level, and multimodal feature fusion is finally performed through time-text interaction and similarity-based retrieval.
 
-<img width="4631" height="3481" alt="TriAlignNet" src="https://github.com/user-attachments/assets/98807c45-7cfa-4927-ab2b-4130e4d616c1" />
+<img width="4631" height="3481" alt="TriAlignNet" src="https://github.com/user-attachments/assets/9afdffa1-1b9a-4aae-aea2-32470c10fa61" />
+
 
 ---
 
